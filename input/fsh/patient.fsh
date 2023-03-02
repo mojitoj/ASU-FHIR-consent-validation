@@ -1,6 +1,6 @@
-Instance: SamplePatient
+Instance: sample-patient
 InstanceOf: Patient
-Description: "Example of a patient."
+Description: "Sample Patient."
 * name
   * given[0] = "James"
   * family = "Doe"
