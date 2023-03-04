@@ -14,7 +14,8 @@ The following shows a consent object in which a patient authorizes an organizati
   "scope": {
     "coding": [
       {
-        "code": "treatment"
+        "code": "treatment",
+        "system": "http://terminology.hl7.org/CodeSystem/consentscope"
       }
     ]
   },
