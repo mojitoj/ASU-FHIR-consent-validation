@@ -4,7 +4,7 @@ Description: "A generic consent template that authorizes a set of treatment."
 
 * status = #draft
 * scope = #treatment
-* category = #LOINC#59284-0 "Consent Document"
+* category = $LOINC#59284-0 "Consent Document"
 * patient = Reference(sample-patient)
 * organization = Reference(sample-organization)
 

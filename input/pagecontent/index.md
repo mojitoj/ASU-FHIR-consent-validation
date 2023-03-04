@@ -22,7 +22,8 @@ The following shows a consent object in which a patient authorizes an organizati
     {
       "coding": [
         {
-          "code": "LOINC#59284-0",
+          "code": "59284-0",
+          "system": "http://loinc.org",
           "display": "Consent Document"
         }
       ]
