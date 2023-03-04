@@ -9,7 +9,7 @@ The following shows a consent object in which a patient authorizes an organizati
 ```json
 {
   "resourceType": "Consent",
-  "id": "GenericTreatmentConsent",
+  "id": "treatment-consent-sample",
   "status": "draft",
   "scope": {
     "coding": [
@@ -22,18 +22,18 @@ The following shows a consent object in which a patient authorizes an organizati
     {
       "coding": [
         {
-          "code": "59284-0",
-          "system": "http://loinc.org"
+          "code": "LOINC#59284-0",
+          "display": "Consent Document"
         }
       ]
     }
   ],
   "patient": {
-    "reference": "Patient/SamplePatient"
+    "reference": "Patient/sample-patient"
   },
   "organization": [
     {
-      "reference": "Organization/SampleOrganization"
+      "reference": "Organization/sample-organization"
     }
   ],
   "provision": {
@@ -53,7 +53,7 @@ The following shows a consent object in which a patient authorizes an organizati
           ]
         },
         "reference": {
-          "reference": "Organization/SampleOrganization"
+          "reference": "Organization/sample-organization"
         }
       }
     ],
@@ -79,5 +79,4 @@ The following shows a consent object in which a patient authorizes an organizati
     ]
   }
 }
-
 ```
