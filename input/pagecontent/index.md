@@ -49,7 +49,8 @@ The following shows a consent object in which a patient authorizes an organizati
           "coding": [
             {
               "code": "PROV",
-              "system": "http://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleClass.html"
+              "system": "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+              "display": "healthcare provider"
             }
           ]
         },
