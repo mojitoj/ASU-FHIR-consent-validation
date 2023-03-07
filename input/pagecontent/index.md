@@ -10,7 +10,11 @@ The following shows a consent object in which a patient authorizes an organizati
 {
   "resourceType": "Consent",
   "id": "treatment-consent-sample",
-  "status": "draft",
+  "meta": {
+    "profile": [
+      "https://github.com/mojitoj/ASU-FHIR-consent-validation/StructureDefinition/ASU.treatment-consent"
+    ]
+  },
   "scope": {
     "coding": [
       {
@@ -30,20 +34,7 @@ The following shows a consent object in which a patient authorizes an organizati
       ]
     }
   ],
-  "patient": {
-    "reference": "Patient/sample-patient"
-  },
-  "organization": [
-    {
-      "reference": "Organization/sample-organization"
-    }
-  ],
   "provision": {
-    "type": "permit",
-    "period": {
-      "start": "2023-02-28",
-      "end": "2025-02-28"
-    },
     "actor": [
       {
         "role": {
@@ -56,10 +47,15 @@ The following shows a consent object in which a patient authorizes an organizati
           ]
         },
         "reference": {
-          "reference": "Organization/sample-organization"
+          "reference": "Practitioner/sample-practitioner"
         }
       }
     ],
+    "type": "permit",
+    "period": {
+      "start": "2023-03-06",
+      "end": "2025-03-06"
+    },
     "code": [
       {
         "coding": [
@@ -80,6 +76,21 @@ The following shows a consent object in which a patient authorizes an organizati
         ]
       }
     ]
-  }
+  },
+  "status": "draft",
+  "patient": {
+    "reference": "Patient/sample-patient"
+  },
+  "organization": [
+    {
+      "reference": "Organization/sample-organization"
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Organization/sample-organization"
+    }
+  ],
+  "dateTime": "2023-03-06"
 }
 ```
