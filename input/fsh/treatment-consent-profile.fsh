@@ -1,4 +1,4 @@
-Profile:        FoundationConsent
+Profile:        TreatmentConsent
 Parent:         Consent
 Id:             ASU.treatment-consent
 Title:          "Treatment Consent Profile"
