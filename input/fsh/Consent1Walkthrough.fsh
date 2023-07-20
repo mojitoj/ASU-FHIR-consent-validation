@@ -1,4 +1,4 @@
-Instance: ASU.Consent1
+Instance: ASU.walkthroughConsent
 InstanceOf: ASU.treatment-consent
 Description: "walkthrough example"
 
