@@ -7,6 +7,7 @@ Description: "A generic consent template that authorizes a set of treatment."
 * organization = Reference(sample-organization)
 * performer = Reference(sample-organization)
 * dateTime = 2023-03-06
+* performer = Reference(sample-grantor)
 
 * provision.type = #permit
 * provision.period.start = 2023-03-06
