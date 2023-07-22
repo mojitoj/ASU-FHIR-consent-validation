@@ -26,7 +26,7 @@ Description: "Sample Treatment Consent Questionnaire."
 * item[5].text = "Legal authorizer of consent"
 * item[5].type = #Reference
 * item[6].linkId = "practitioner obligation"
-* item[6].text = ""
+* item[6].text = "I, the undersign here, agree to fulfull all obligations to the patient"
 * item[6].type = 
 * item[7].linkId = "procedure risk"
 * item[7].text = "I, the undersign here, have been explained all the benefits and possible complications of the procedure"
