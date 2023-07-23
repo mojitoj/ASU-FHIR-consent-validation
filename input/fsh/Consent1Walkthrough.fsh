@@ -6,6 +6,7 @@ Description: "walkthrough example"
 * patient = Reference(sample-patient)
 * organization = Reference(sample-organization)
 * performer = Reference(sample-grantor)
+* performer = Reference(sample-TreatmentRisk)
 * dateTime = 2023-03-06
 /*
 * provision... = Reference(sample-TreatmentRisk)
@@ -16,4 +17,5 @@ https://hl7.org/fhir/R4/riskassessment.html is not a valid reference for Consent
 * provision.period.end = 2027-03-06
 * provision.actor[0].reference = Reference(sample-practitioner)
 * provision.actor[1].reference = Reference(sample-GranteeObligation)
+* provision.actor[2].reference = Reference(sample-TreatmentRisk)
 * provision.code[0] = $SCT#72641008 "Administration of Sedative"

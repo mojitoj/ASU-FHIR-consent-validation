@@ -28,9 +28,12 @@ Description: "Sample TreatmentRisk"
 * subject = Reference(sample-patient)
 * status = #final
 */
-Instance: sample-TreatmentRisk
-InstanceOf: RiskAssessment
-Description: "Sample TreatmentRisk"
 
-* subject = Reference(sample-patient)
-* status = #final
+
+Instance: sample-TreatmentRisk
+InstanceOf: RelatedPerson
+Description: "Sample TreatmentRisk"
+* patient = Reference(sample-patient)
+* name
+  * given[0] = "Timmothy"
+  * family = "Tom" 
