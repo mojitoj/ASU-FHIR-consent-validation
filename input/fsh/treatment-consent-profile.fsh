@@ -5,8 +5,7 @@ Title:          "Treatment Consent Profile"
 Description:    """
 A profile of the Consent resource for modeling treatment consents
 """
-// * category[0] = $CONSENT-SCOPE#treatment
-// * category[1].coding[0] = $LOINC#59284-0 "Consent Document"
+* category = $CONSENT-SCOPE#treatment
 
 // TODO maybe we should define a category for treatment
 * subject 1..1

@@ -3,7 +3,6 @@ InstanceOf: ASU.treatment-consent
 Description: "A generic consent template that authorizes a set of treatment."
 
 * status = #draft
-* category[0] = $CONSENT-SCOPE#treatment "Treatment"
 * subject = Reference(sample-patient)
 * grantor = Reference(sample-RelatedPerson)
 * grantee = Reference(sample-practitioner)
