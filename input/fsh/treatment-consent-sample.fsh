@@ -3,13 +3,18 @@ InstanceOf: ASU.treatment-consent
 Description: "A generic consent template that authorizes a set of treatment."
 
 * status = #draft
-* patient = Reference(sample-patient)
-* organization = Reference(sample-organization)
-* performer = Reference(sample-organization)
-* dateTime = 2023-03-06
-* performer = Reference(sample-grantor)
+* category[0] = $CONSENT-SCOPE#treatment "Treatment"
+* subject = Reference(sample-patient)
+* grantor = Reference(sample-RelatedPerson)
+* grantee = Reference(sample-practitioner)
+* manager = Reference(sample-organization)
+* controller = Reference(sample-organization)
+* date = 2023-03-06
+* period.start = 2023-03-06
+* period.end = 2024-03-06
 
-* provision.type = #permit
+
+* decision = #permit
 * provision.period.start = 2023-03-06
 * provision.period.end = 2025-03-06
 * provision.actor[0].reference = Reference(sample-practitioner)

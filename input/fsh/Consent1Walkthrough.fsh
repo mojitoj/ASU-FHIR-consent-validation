@@ -3,16 +3,16 @@ InstanceOf: ASU.treatment-consent
 Description: "walkthrough example"
 
 * status = #draft
-* patient = Reference(sample-patient)
-* organization = Reference(sample-organization)
-* performer = Reference(sample-grantor)
-* performer = Reference(sample-TreatmentRisk)
-* dateTime = 2023-03-06
-/*
-* provision... = Reference(sample-TreatmentRisk)
-https://hl7.org/fhir/R4/riskassessment.html is not a valid reference for Consent resource. How to get around this?
-*/
-* provision.type = #permit
+* subject = Reference(sample-patient)
+* grantor = Reference(sample-RelatedPerson)
+* grantee = Reference(sample-practitioner)
+* manager = Reference(sample-organization)
+* controller = Reference(sample-organization)
+* date = 2023-03-06
+* period.start = 2023-03-06
+* period.end = 2024-03-06
+
+* decision = #permit
 * provision.period.start = 2023-03-06
 * provision.period.end = 2027-03-06
 * provision.actor[0].reference = Reference(sample-practitioner)

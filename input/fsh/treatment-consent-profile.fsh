@@ -5,20 +5,26 @@ Title:          "Treatment Consent Profile"
 Description:    """
 A profile of the Consent resource for modeling treatment consents
 """
-* scope = $CONSENT-SCOPE#treatment
-* category = $LOINC#59284-0 "Consent Document"
+// * category[0] = $CONSENT-SCOPE#treatment
+// * category[1].coding[0] = $LOINC#59284-0 "Consent Document"
+
 // TODO maybe we should define a category for treatment
-* patient 1..1
-* dateTime 1..1
-* performer 1..
-* organization 1..
-* provision.type 1..1
-* provision.period MS
-* provision.actor 1.. MS
+* subject 1..1
+* date 1..1
+* period 1..1
+* grantor 1..1
+* grantee 1..1
+* manager 1..1
+* controller 1..1
+* decision 1..1
+* provision.period 
+* provision.actor 1.. 
 * provision.actor.role = $ROLE-CLASS#PROV "healthcare provider"
 // TODO maybe we should define a more specific code to reflect this role
 * provision.action 0..0
-* provision.class 0..0
+* provision.documentType 0..0
+* provision.resourceType 0..0
 * provision.securityLabel 0..0
-* provision.code 1.. MS
+* provision.dataPeriod 0..0
+* provision.code 1.. 
 * provision.provision.provision 0..0
