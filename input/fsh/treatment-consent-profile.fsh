@@ -16,7 +16,6 @@ A profile of the Consent resource for modeling treatment consents
 * manager 1..1
 * controller 1..1
 * decision 1..1
-* provision.period 
 * provision.actor 1.. 
 * provision.actor.role = $ROLE-CLASS#PROV "healthcare provider"
 // TODO maybe we should define a more specific code to reflect this role
