@@ -39,11 +39,11 @@ Description: "Sample Treatment Consent Questionnaire."
 * item[5].type = #reference
 * item[5].definition = "https://github.com/mojitoj/ASU-FHIR-consent-validation/StructureDefinition/ASU.treatment-consent#Consent.grantor"
 
-* item[6].linkId = "practitioner obligation"
+* item[6].linkId = "provider"
 * item[6].text = "I, the undersigned here, agree to fulfill all obligations to the patient"
 * item[6].type = #reference
 
-* item[7].linkId = "procedure risk"
+* item[7].linkId = "administrator"
 * item[7].text = "I, the undersign here, have been explained all the benefits and possible complications of the procedure"
 * item[7].type = #reference
 
