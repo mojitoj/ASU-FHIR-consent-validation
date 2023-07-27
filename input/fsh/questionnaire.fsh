@@ -17,27 +17,27 @@ Description: "Sample Treatment Consent Questionnaire."
 * item[1].linkId = "procedures"
 * item[1].text = "to administer such treatments as are necessary, and to perform the following procedures"
 * item[1].type = #coding
-* item[0].definition = "https://github.com/mojitoj/ASU-FHIR-consent-validation/StructureDefinition/ASU.treatment-consent#Consent.provision.code"
+* item[1].definition = "https://github.com/mojitoj/ASU-FHIR-consent-validation/StructureDefinition/ASU.treatment-consent#Consent.provision.code"
 
 * item[2].linkId = "organization"
-* item[2].text = "Deidentified, listed 1 - 5"
+* item[2].text = "Organization"
 * item[2].type = #reference
-* item[0].definition = "https://github.com/mojitoj/ASU-FHIR-consent-validation/StructureDefinition/ASU.treatment-consent#Consent.controller"
+* item[2].definition = "https://github.com/mojitoj/ASU-FHIR-consent-validation/StructureDefinition/ASU.treatment-consent#Consent.controller"
 
 * item[3].linkId = "Patient"
-* item[3].text = "Given and family name"
+* item[3].text = "Patient name"
 * item[3].type = #reference
-* item[0].definition = "https://github.com/mojitoj/ASU-FHIR-consent-validation/StructureDefinition/ASU.treatment-consent#Consent.subject"
+* item[3].definition = "https://github.com/mojitoj/ASU-FHIR-consent-validation/StructureDefinition/ASU.treatment-consent#Consent.subject"
 
 * item[4].linkId = "dateTime"
-* item[4].text = "When the consent is made valid in the format YYYY, YYYY-MM, YYYY-MM-DD or YYYY-MM-DDThh:mm:ss+zz:zz"
+* item[4].text = "The consent is effective on"
 * item[4].type = #dateTime
-* item[0].definition = "https://github.com/mojitoj/ASU-FHIR-consent-validation/StructureDefinition/ASU.treatment-consent#Consent.date"
+* item[4].definition = "https://github.com/mojitoj/ASU-FHIR-consent-validation/StructureDefinition/ASU.treatment-consent#Consent.date"
 
 * item[5].linkId = "grantor"
 * item[5].text = "Legal authorizer of consent"
 * item[5].type = #reference
-* item[0].definition = "https://github.com/mojitoj/ASU-FHIR-consent-validation/StructureDefinition/ASU.treatment-consent#Consent.grantor"
+* item[5].definition = "https://github.com/mojitoj/ASU-FHIR-consent-validation/StructureDefinition/ASU.treatment-consent#Consent.grantor"
 
 * item[6].linkId = "practitioner obligation"
 * item[6].text = "I, the undersigned here, agree to fulfill all obligations to the patient"
