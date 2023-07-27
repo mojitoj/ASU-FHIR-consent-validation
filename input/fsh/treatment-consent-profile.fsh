@@ -13,7 +13,6 @@ A profile of the Consent resource for modeling treatment consents
 * period 1..1
 * grantor 1..1
 * grantee 1..1
-* manager 1..1
 * controller 1..1
 * decision = #permit
 * provision.actor 1.. 

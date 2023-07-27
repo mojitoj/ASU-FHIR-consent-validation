@@ -6,7 +6,6 @@ Description: "walkthrough example"
 * subject = Reference(sample-patient)
 * grantor = Reference(sample-RelatedPerson)
 * grantee = Reference(sample-practitioner)
-* manager = Reference(sample-organization)
 * controller = Reference(sample-organization)
 * date = 2023-03-06
 * period.start = 2023-03-06
