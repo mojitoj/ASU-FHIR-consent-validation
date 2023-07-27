@@ -12,8 +12,6 @@ Description: "A generic consent template that authorizes a set of treatment."
 * period.start = 2023-03-06
 * period.end = 2024-03-06
 
-
-* decision = #permit
 * provision.period.start = 2023-03-06
 * provision.period.end = 2025-03-06
 * provision.actor[0].reference = Reference(sample-practitioner)
