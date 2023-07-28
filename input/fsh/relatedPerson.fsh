@@ -1,4 +1,4 @@
-Instance: sample-RelatedPerson
+Instance: sample-related-person
 InstanceOf: RelatedPerson
 Description: "Sample RelatedPerson."
 * patient = Reference(sample-patient)
