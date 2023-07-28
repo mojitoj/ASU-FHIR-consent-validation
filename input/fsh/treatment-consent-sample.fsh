@@ -4,7 +4,7 @@ Description: "A generic consent template that authorizes a set of treatment."
 
 * status = #draft
 * subject = Reference(sample-patient)
-* grantor = Reference(sample-RelatedPerson)
+* grantor = Reference(sample-related-person)
 * grantee = Reference(sample-practitioner)
 * controller = Reference(sample-organization)
 * date = 2023-03-06
