@@ -39,18 +39,14 @@ Description: "Sample Treatment Consent Questionnaire."
 * item[5].type = #reference
 * item[5].definition = "https://github.com/mojitoj/ASU-FHIR-consent-validation/StructureDefinition/ASU.treatment-consent#Consent.grantor"
 
-* item[6].linkId = "provider"
-* item[6].text = "I, the undersigned here, agree to fulfill all obligations to the patient"
+* item[6].linkId = "administrator"
+* item[6].text = "I, the undersign here, have been explained all the benefits and possible complications of the procedure"
 * item[6].type = #reference
 
-* item[7].linkId = "administrator"
-* item[7].text = "I, the undersign here, have been explained all the benefits and possible complications of the procedure"
+* item[7].linkId = "translator"
+* item[7].text = "Individual who helped explain/translate the document"
 * item[7].type = #reference
 
-* item[8].linkId = "translator"
-* item[8].text = "Individual who helped explain/translate the document"
+* item[8].linkId = "witness"
+* item[8].text = "Individual who provided witness to the execution of the consent"
 * item[8].type = #reference
-
-* item[9].linkId = "witness"
-* item[9].text = "Individual who provided witness to the execution of the consent"
-* item[9].type = #reference
