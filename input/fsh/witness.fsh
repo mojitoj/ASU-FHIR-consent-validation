@@ -3,5 +3,5 @@ InstanceOf: RelatedPerson
 Description: "Sample witness"
 * patient = Reference(sample-patient)
 * name
-  * given[0] = "Tim"
-  * family = "Tom" 
+  * given[0] = "Rob"
+  * family = "Tommy" 
