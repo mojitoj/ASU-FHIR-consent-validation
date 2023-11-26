@@ -27,14 +27,14 @@ A profile of the Consent resource for modeling treatment consents
 * provision.provision.provision 0..0
 
 Extension: Witness
-Id: ASU.witness
+Id: witness
 Title: "Consent Witness Extension"
 Description: "An extension for identifying the consent witness."
 Context: Consent
 * value[x] only Reference(RelatedPerson)
 
 Extension: Translator
-Id: ASU.translator
+Id: translator
 Title: "Consent Translator Extension"
 Description: "An extension for identifying the consent translator."
 Context: Consent
